@@ -1,0 +1,145 @@
+*{
+  margin: 0px;
+  padding: 0px;
+
+}
+.Wrapper{
+  max-width: 100%;
+  margin: auto;
+  display:flex;
+}
+.Left{
+  width: 270px;
+  height: 100%;
+  background: #c9e4de;
+  margin: auto;
+  border: 3px solid rgb(0, 0, 0);
+  padding: 10px;
+}
+.Content{
+ width: 500px;/* 400px */
+  height: 600px;
+  
+}
+.Right{
+  width: 270px;
+  height: 100%;
+  background: #f9c6c9;
+  margin: auto;
+  border: 3px solid rgb(0, 0, 0);
+  padding: 10px;
+}
+
+.range {
+  display: inline-block;
+  margin: 20px 40px 20px
+  
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  position: relative
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 400px;
+  height: 5px;
+  border: none;
+  border-radius: 2px
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 510%;
+  background: #000000;
+  border: 2px solid #ff0000;
+  margin-top: -5px;
+  cursor: pointer
+}
+
+.focused::-webkit-slider-thumb {
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.15)
+}
+
+.clicked::-webkit-slider-thumb {
+  -webkit-transform: scale(1.5)
+}
+
+.disabled::-webkit-slider-thumb {
+  -webkit-transform: scale(0.9);
+  box-shadow: 0 0 0 3px #141414;
+  background: #515151 !important;
+  border-color: #515151 !important
+}
+
+input[type=range]:focus {
+  outline: none
+}
+
+.rangeM input[type=range].disabled::-webkit-slider-runnable-track {
+  background: #515151!important
+}
+
+.rangeM input[type=range]::-webkit-slider-thumb {
+  background: #000000;
+  border-color: #1eff00
+}
+
+.range:hover input[type=range]:before {
+  color: white;
+  content: '50';
+  position: absolute;
+  font-family: Roboto Slab;
+  top: -49px;
+  background: #000000;
+  padding: 8px 0 3px;
+  font-size: 14px;
+  width: 30px;
+  text-align: center;
+  border-radius: 100% 100% 0 0
+}
+
+.range:hover input[type=range]:after {
+  content: '';
+  position: absolute;
+  top: -19px;
+  left: 50px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 8px solid #000000;
+  font-family: Roboto Slab
+}
+.column {
+  float: left;
+  padding: 15px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.menu {
+  width: 25%;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: #33b5e5;
+  color: #ffffff;
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
